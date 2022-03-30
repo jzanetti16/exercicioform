@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1 style="text-align: center">Formulário de inscrição em evento</h1>
+  
+    <fieldset>
+            <label for="nome">Nome completo:</label>
+                <input type="text"
+                        id="nome"
+                        required> 
+
+        <p> <label for="email">E-mail:</label>
+                <input type="email"
+                        id="email"
+                        placeholder="ex:myname@example.com"
+                        required>
+        </p>
+
+        <p> <legend>Sexo:</legend>
+            <label for="masc">Masculino</label>
+                <input type="radio" name="sexo" value="M" id="masc" required>
+            <label for="fem">Feminino</label>
+                <input type="radio" name="sexo" value="F" id="fem" required>
+        </p>
+
+        <p> <label for="cargo">Cargo:</label>
+                <input type="text"
+                        id="cargo"> 
+        </p>
+
+        <p> <label for="nascimento">Nascimento:</label>
+                <input type="date"
+                        id="nascimento">  
+        </p>
+
+        <p> <label for="telefone">Telefone:</label>
+                <input type="number"
+                        id="telefone"
+                        placeholder="(XX)XXXXX-XXXX">
+        </p>
+    </fieldset>
+
+    <h2 style="text-align: left">Informações da Instituição</h2>
+   <p>Preencha os campos abaixo com as Informações da empresa em que trabalha.</p>
+
+    <fieldset>
+        <p> <label for="empresa">Empresa:</label>
+                <input type="text"
+                        id="empresa">
+        </p>
+
+        <p> <label for="endereco">Endereço completo:</label>
+                <input type="text"
+                        id="endereco">
+        </p>
+
+        <p> <label for="cidade">Cidade:</label>
+                <input type="text"
+                        id="cidade">
+        </p>
+
+        <p> <legend>Estado:
+                <select name="Estado">
+                <option selected disabled>Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+				<option value="DF">Distrito Federal</option>
+				<option value="ES">Espírito Santo</option>
+				<option value="GO">Goiás</option>
+				<option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+				<option value="MS">Mato Grosso do Sul</option>
+				<option value="MG">Minas Gerais</option>
+				<option value="PA">Pará</option>
+				<option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+				<option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="RN">Rio Grande do Norte</option>
+				<option value="RS">Rio Grande do Sul</option>
+				<option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+				<option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+				<option value="SE">Sergipe</option>
+				<option value="TO">Tocantins</option>
+            </legend>
+                </select>  
+            
+        </p>
+        
+        <p> <label for="Q.Funcionários">Quant.Funcionários</label>
+                <input type="number"
+                        id="Q.func">
+        </p>
+
+        <p> <label for="Observações">Observações:</label>
+             <br><textarea id="observacao"
+                        name="observacao"
+                        rows="10" cols="25">
+             </textarea></br>
+        </p>
+    </fieldset>
+
+        <p> <label for="Recibo" style="font-size: small;">Recibo:</label>
+                <input type="checkbox"
+                        name="recibo"> Emitir em nome da Instituição.
+        </p>
+
+    <input type="submit" value="Fazer Inscrição">
+</body>
+</html>
