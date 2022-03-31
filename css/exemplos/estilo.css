@@ -1,0 +1,21 @@
+h1{
+    background-color: green;
+    border: 1px solid yellow;
+    width: 70%;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 18pt;
+}
+
+.mult3 {
+    font-size: 24pt;
+    color: blue;
+}
+
+#especial{
+    font-size: medium;
+    color: brown;
+    background-color: purple;
+}
